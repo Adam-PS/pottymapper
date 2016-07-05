@@ -29,46 +29,7 @@ var layers = {
 layers.Streets.addTo(map);
 L.control.layers(layers).addTo(map);
 
-var geoJson  = [
-    {
-        "type": "FeatureCollection",
-        "features":[
-            { "type": "Feature",
-              "geometry": {"type": "Point", "coordinates": [-75.164399, 39.95413]},
-              "properties": {"title": "Jawnadelphia",
-                             "description": "Life, Liberty, and the pursuit of Jawns.",
-                             "marker-size": "large",
-                             "marker-color": "#ffefd5",
-                             "marker-symbol": "star",
-                            }
-            },
-            { "type": "Feature",
-              "geometry": {"type": "Point", "coordinates": [-75.176122, 39.954277]},
-              "properties": {"title": "Trader Jawns",
-                             "description": "Cheap organic jawns.",
-                             "marker-size": "large",
-                             "marker-color": "#ffefd5"
-                            }
-            },
-            { "type": "Feature",
-              "geometry": {"type": "Point", "coordinates": [ -75.145696, 39.933569]},
-              "properties": {"title": "South Philly Jawns",
-                             "description": "Commercial jawns.",
-                             "marker-size": "large",
-                             "marker-color": "#ffefd5"
-                            }
-            },
-            { "type": "Feature",
-              "geometry": {"type": "Point", "coordinates": [  -75.153859, 39.939798]},
-              "properties": {"title": "Jawnton Abbey",
-                             "description": "My jawn.",
-                             "marker-size": "large",
-                             "marker-color": "#ffefd5"
-                            }
-            }
-        ]}];
-
-var myJawns = L.mapbox.featureLayer(geoJson).addTo(map);
+var myJawns = L.mapbox.featureLayer().loadURL('./data/features.geojson').addTo(map);
 
 myJawns.on('ready', function() {
     map.fitBounds(myJawns.getBounds());
