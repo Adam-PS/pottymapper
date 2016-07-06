@@ -42,7 +42,10 @@ myJawns.on('layeradd', function(e) {
     var popupContent = document.createElement('div');
 
     for (var key in props) {
-        if (props.hasOwnProperty(key) && (key != 'marker-size' || 'marker-color')) {
+        if (props.hasOwnProperty(key)) {
+            if (key == 'marker-size' || 'marker-color') {
+                continue;
+            }
             var popupContentDiv = document.createElement('div');
             popupContentDiv.innerHTML = key + ' : ' + props[key];
             popupContent.appendChild(popupContentDiv);
