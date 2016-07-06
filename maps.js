@@ -1,5 +1,5 @@
 L.mapbox.accessToken = 'pk.eyJ1IjoiYWRhbXBzIiwiYSI6ImNpcTJmNHR2ODAwNW14bG00MWZ3MW4ydmkifQ.KF6MkiVY6tPogX0HJHhUKg';
-var map = L.mapbox.map('map', 'adamps.0hlh0oli').setView([39.945, -75.162], 17);
+var map = L.mapbox.map('map', 'adamps.0hlh0oli').setView([39.945, -75.162], 14);
 var resetViewControl = L.Control.extend({
     options: {position : 'topleft'},
     onAdd: function (map) {
@@ -43,9 +43,6 @@ myJawns.on('layeradd', function(e) {
 
     for (var key in props) {
         if (props.hasOwnProperty(key)) {
-            if (key == 'marker-size' || 'marker-color') {
-                continue;
-            }
             var popupContentDiv = document.createElement('div');
             popupContentDiv.innerHTML = key + ' : ' + props[key];
             popupContent.appendChild(popupContentDiv);
