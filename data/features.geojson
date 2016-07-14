@@ -2,58 +2,52 @@
   "features": [
       { "type": "Feature",
         "geometry": {"type": "Point", "coordinates": [-75.164399, 39.95413]},
-        "properties": {"title": "Jawnadelphia",
+        "properties": {
+                       "title": "Jawnadelphia",
                        "description": "Life, Liberty, and the pursuit of Jawns.",
                        "bathroom-type": "unisex",
                        "changing-table": false,
-                       "comments": "Lots of steps.",
-                       "marker-size": "large",
-                       "marker-color": "#ffefd5",
-                       "marker-symbol": "star"
+                       "comments": "Lots of steps."
                       }
       },
       { "type": "Feature",
         "geometry": {"type": "Point", "coordinates": [-75.176122, 39.954277]},
-        "properties": {"title": "Trader Jawns",
+        "properties": {
+                       "title": "Trader Jawns",
                        "description": "Cheap organic jawns.",
                        "bathroom-type": "women",
                        "changing-table": true,
-                       "comments": "Next to customer service desk.",
-                       "marker-size" : "large",
-                       "marker-color": "#ffefd5"
+                       "comments": "Next to customer service desk."
                       }
       },
       { "type": "Feature",
         "geometry": {"type": "Point", "coordinates": [-75.145696, 39.933569]},
-        "properties": {"title": "South Philly Jawns",
+        "properties": {
+                       "title": "South Philly Jawns",
                        "description": "Commercial jawns.",
                        "bathroom-type": "none",
                        "changing-table": false,
-                       "comments": "avoid at all costs.",
-                       "marker-size": "large",
-                       "marker-color": "#ffefd5"
+                       "comments": "avoid at all costs."
                       }
       },
       { "type": "Feature",
         "geometry": {"type": "Point", "coordinates": [-75.1560112, 39.9411733]},
-        "properties": {"title": "Rally Jawn",
+        "properties": {
+                       "title": "Rally Jawn",
                        "description": "A coffee jawn.",
                        "bathroom-type": "unisex",
                        "changing-table": true,
-                       "comments": "enter w/ stroller through back door.",
-                       "marker-size": "large",
-                       "marker-color": "#ffefd5"
+                       "comments": "enter w/ stroller through back door."
                       }
       },
       { "type": "Feature",
         "geometry": {"type": "Point", "coordinates": [-75.153859, 39.939798]},
-        "properties": {"title": "Jawnton Abbey",
+        "properties": {
+                       "title": "Jawnton Abbey",
                        "description": "My jawn.",
                        "bathroom-type": "unisex",
                        "changing-table": false,
-                       "comments": "mi casa su casa.",
-                       "marker-size": "large",
-                       "marker-color": "#ffefd5"
+                       "comments": "mi casa su casa."
                       }
       }
   ]
